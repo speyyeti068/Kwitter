@@ -21,7 +21,7 @@
 
 <body>
 	<div class="container">
-		<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logOut()">Logout</button>
+		<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
 		<center>
 			<h1 class="header">
 				Kwitter
@@ -29,14 +29,16 @@
 					<img src="m2.png">
 				</sup>
 			</h1>
-			<h3 class="color_white"></h3>
-			<div id="userName" class="form-group input_div_room_page">
+			<h3 id="userName" class="color_white"></h3>
+			<div class="form-group input_div_room_page">
 				<label>#Add Room:</label>
 				<input type="text" placeholder="Enter a roomname" class="form-control" id="roomName">
 			</div>
-			<button class="btn btn-success">#Add Room</button>
+			<button class="btn btn-success" onclick="addRoom()">#Add Room</button>
 			<h3 class="color_white">#TRENDINGROOMS</h3>
+			<div id = "out">
 
+			</div>
 		</center>
 	</div>
 	<script src="kwitter_room.js"></script>
